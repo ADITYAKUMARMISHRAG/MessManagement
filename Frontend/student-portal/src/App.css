@@ -1,0 +1,142 @@
+/* App.css */
+
+/* General Page Styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #2c003e, #4b0082); /* violet gradient */
+  margin: 0;
+  padding: 0;
+  color: #f0f0f0;
+}
+
+/* Container Styling */
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 15px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(5px);
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Heading Styling */
+h1 {
+  color: #f0f0f0;
+  text-align: center;
+  margin-bottom: 30px;
+  text-shadow: 0 0 10px #a855f7;
+  font-size: 2.5rem;
+  letter-spacing: 1.2px;
+}
+
+/* Buttons */
+button {
+  margin-right: 10px;
+  padding: 10px 18px;
+  background: linear-gradient(to right, #6f00ff, #a100ff);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(to right, #8a2be2, #b832f4);
+  box-shadow: 0 0 12px #b832f4, 0 0 24px #e070ff;
+}
+
+/* Input Fields */
+form input {
+  width: 95%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 2px solid #9145b6;
+  background-color: #1a1a1a;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+form input::placeholder {
+  color: #ccc;
+}
+
+form input:focus,
+form input:hover {
+  background-color: #2a2a2a;
+  box-shadow: 0 0 10px #a64bf4, 0 0 20px #b765f5;
+  outline: none;
+}
+
+/* Labels */
+label {
+  color: #f0f0f0;
+  font-weight: 500;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  margin-top: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: center;
+  color: #333;
+}
+
+th {
+  background-color: #05e7ea;
+  font-weight: bold;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(185, 103, 255, 0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #c084fc, 0 0 30px #e0aaff;
+}
+
+@keyframes logoGlow {
+  0% { box-shadow: 0 0 10px #a64bf4; }
+  50% { box-shadow: 0 0 20px #c084fc; }
+  100% { box-shadow: 0 0 10px #a64bf4; }
+}
+
+.logo {
+  animation: logoGlow 3s infinite;
+}
+
+.footer {
+  text-align: center;
+  color: #aaa;
+  font-size: 0.9rem;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #444;
+  opacity: 0.8;
+}
